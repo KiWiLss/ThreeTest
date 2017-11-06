@@ -3,8 +3,11 @@ package com.kiwilss.threetest
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import com.kiwilss.threetest.java.model.Person
+import com.kiwilss.threetest.java.model.Rectangle
 
 class MainActivity2 : AppCompatActivity() {
+    val TAG="MMM";
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,8 +18,15 @@ class MainActivity2 : AppCompatActivity() {
         val max = max(a, b)
         Log.e("MMM", "字符串模板,max=$max,等价于max="+max.toString());
 
-
-
+        //声明一个类
+        val person=Person("Bob",true);
+        //调用get方法
+        Log.e(TAG,person.name);
+        //调用set方法
+        person.isMarrid=false
+        //调用自定义访问器
+        val rectangle=Rectangle(88,25)
+        Log.e(TAG,rectangle.isSuqare.toString())
     }
 
     //声明变量,先是关键词,然后是变量名称,最后是类型(可以不加类型)
