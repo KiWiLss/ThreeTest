@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <RadioGroup
+        android:id="@+id/rg_radio_rg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_radio_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="点击一"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@color/tv_select_color"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_radio_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="点击二"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@color/tv_select_color"
+            />
+
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_radio_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff0"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toTopOf="@id/rg_radio_rg"
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
