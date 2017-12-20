@@ -12,4 +12,8 @@ class Rectangle(val height: Int ,val width: Int) {
 //    }
     //这个方法还可以写成
     get() = height==width
+
+    val hw: Int
+    get() = height+width
+
 }
